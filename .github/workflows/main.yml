@@ -21,14 +21,14 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore Task01
-        run: dotnet restore Task1/churrosapp/churrosapp.csproj
+        run: dotnet restore que01/churrosapp/churrosapp.csproj
 
       - name: Build Task01
-        run: dotnet build Task1/churrosapp/churrosapp.csproj --no-restore
+        run: dotnet build que01/churrosapp/churrosapp.csproj --no-restore
 
       - name: Run Task01
         run: |
-          cd Task1/churrosapp
+          cd que01/churrosapp
           echo -e "1\n1\n1\n2\n0" | dotnet run --no-build
         continue-on-error: true
 
@@ -45,13 +45,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore Task02
-        run: dotnet restore Task2/Periodictable/Periodictable.csproj
+        run: dotnet restore que02/Periodictable/Periodictable.csproj
 
       - name: Build Task02
-        run: dotnet build Task2/Periodictable/Periodictable.csproj --no-restore
+        run: dotnet build que02/Periodictable/Periodictable.csproj --no-restore
 
       - name: Run Task02
         run: |
-          cd Task2/Periodictable
+          cd que02/Periodictable
           echo -e "1\nn" | dotnet run --no-build
         continue-on-error: true
