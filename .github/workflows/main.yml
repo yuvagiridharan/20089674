@@ -55,3 +55,39 @@ jobs:
           cd que02/Periodictable
           echo -e "1\nn" | dotnet run --no-build
         continue-on-error: true
+
+  task03-rental-car:
+    name: Task03 - EasyDrive Rental Car
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install tinydb rich questionary
+
+      - name: Check files exist
+        run: |
+          test -f que03/rentalcar/que03_server.py
+          test -f que03/rentalcar/que03_client.py
+          echo "Both files found"
+
+      - name: Syntax check server
+        run: python3 -m py_compile que03/rentalcar/que03_server.py
+
+      - name: Syntax check client
+        run: python3 -m py_compile que03/rentalcar/que03_client.py
+
+      - name: Run server and client
+        run: |
+          cd que03/rentalcar
+          python3 que03_server.py &
+          sleep 2
+          echo -e "John Smith\n123 Main Street Dublin\n1234567A\nDL123456\ny" | python3 que03_client.py
+        continue-on-error: true
