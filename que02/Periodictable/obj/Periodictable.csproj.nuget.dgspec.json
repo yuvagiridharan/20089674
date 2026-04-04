@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yuvagiridharan/Documents/20089674/task02/Periodictable/Periodictable.csproj": {}
+    "/Users/yuvagiridharan/Documents/20089674/que02/Periodictable/Periodictable.csproj": {}
   },
   "projects": {
-    "/Users/yuvagiridharan/Documents/20089674/task02/Periodictable/Periodictable.csproj": {
+    "/Users/yuvagiridharan/Documents/20089674/que02/Periodictable/Periodictable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yuvagiridharan/Documents/20089674/task02/Periodictable/Periodictable.csproj",
+        "projectUniqueName": "/Users/yuvagiridharan/Documents/20089674/que02/Periodictable/Periodictable.csproj",
         "projectName": "Periodictable",
-        "projectPath": "/Users/yuvagiridharan/Documents/20089674/task02/Periodictable/Periodictable.csproj",
+        "projectPath": "/Users/yuvagiridharan/Documents/20089674/que02/Periodictable/Periodictable.csproj",
         "packagesPath": "/Users/yuvagiridharan/.nuget/packages/",
-        "outputPath": "/Users/yuvagiridharan/Documents/20089674/task02/Periodictable/obj/",
+        "outputPath": "/Users/yuvagiridharan/Documents/20089674/que02/Periodictable/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yuvagiridharan/.nuget/NuGet/NuGet.Config"

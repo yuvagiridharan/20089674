@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Periodictable")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+445069e27cdfe5d5342683a6a9fcfb50a02c2825")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+433d689fdd6a4e2dba8c9106fa5faddced5ce99e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Periodictable")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Periodictable")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
