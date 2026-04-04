@@ -69,8 +69,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install tinydb rich questionary
+        run: pip install tinydb rich questionary
 
       - name: Check files exist
         run: |
@@ -90,4 +89,31 @@ jobs:
           python3 que03_server.py &
           sleep 2
           echo -e "John Smith\n123 Main Street Dublin\n1234567A\nDL123456\ny" | python3 que03_client.py
+        continue-on-error: true
+
+  task04-web-scraping:
+    name: Task04 - Web Scraping
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Check file exists
+        run: |
+          test -f que04/webscrub/que04.py
+          echo "Scraper file found"
+
+      - name: Syntax check
+        run: python3 -m py_compile que04/webscrub/que04.py
+
+      - name: Run web scraper
+        run: python3 que04/webscrub/que04.py
         continue-on-error: true
