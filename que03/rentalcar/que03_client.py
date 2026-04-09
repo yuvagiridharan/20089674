@@ -61,18 +61,7 @@ def validate_pps(value):
 
 
 def validate_name(value: str) -> bool | str:
-    """Validate that a full name contains only letters and spaces.
-
-    Parameters
-    ----------
-    value : str
-        The raw name string entered by the user.
-
-    Returns
-    -------
-    bool | str
-        ``True`` if valid, or an error message string if invalid.
-    """
+    
     if not re.match(r"^[A-Za-z\s]+$", value.strip()) or len(value.strip()) < 2:
         return "Name must contain letters only (spaces allowed, min 2 characters)"
     return True
