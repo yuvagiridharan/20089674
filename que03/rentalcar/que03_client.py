@@ -194,15 +194,7 @@ def display_response(response: dict) -> None:
 
 #Entry point
 def main() -> None:
-    """Entry point for the EasyDrive client application.
-
-    Orchestrates: collect input -> confirm -> send to server -> display result.
-    Handles network errors gracefully with plain error messages.
-
-    Returns
-    -------
-    None
-    """
+    
     try:
         customer_data: dict = collect_customer_info()
 
